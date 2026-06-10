@@ -1,0 +1,263 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#faf7f4;
+    color:#2c2c2c;
+    line-height:1.8;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(
+        rgba(0,0,0,.45),
+        rgba(0,0,0,.55)
+    ),
+    url("imagens/capa.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:30px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.3rem;
+}
+
+.contador{
+    margin-top:25px;
+    font-size:1.1rem;
+    opacity:.9;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:90px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#b05c79;
+}
+
+/* CAPÍTULOS */
+
+.chapter{
+    max-width:900px;
+    margin:auto;
+    margin-bottom:80px;
+}
+
+.chapter h2{
+    color:#b05c79;
+    margin-bottom:15px;
+}
+
+.chapter p{
+    font-size:1.05rem;
+}
+
+/* FOTOS */
+
+.photo-block{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    margin-top:35px;
+    flex-wrap:wrap;
+}
+
+.photo-block img{
+    width:320px;
+    border-radius:18px;
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.15);
+}
+
+.caption{
+    flex:1;
+    min-width:250px;
+
+    background:white;
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+.caption p{
+    margin:0;
+}
+
+/* POLAROID */
+
+.gallery{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+}
+
+.polaroid{
+    background:white;
+    padding:12px;
+    border-radius:12px;
+
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.12);
+}
+
+.polaroid img{
+    width:100%;
+    border-radius:8px;
+}
+
+.polaroid p{
+    text-align:center;
+    margin-top:10px;
+    font-size:.95rem;
+}
+
+/* SOFÁ */
+
+.sofa{
+    background:#fff4f7;
+    border-radius:30px;
+    padding:50px;
+    margin-top:40px;
+}
+
+.sofa h2{
+    color:#b05c79;
+    margin-bottom:20px;
+}
+
+.sofa p{
+    margin-bottom:15px;
+}
+
+/* CARTA */
+
+.letter{
+    background:white;
+    max-width:900px;
+
+    margin:auto;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.08);
+}
+
+.letter h2{
+    color:#b05c79;
+    margin-bottom:20px;
+}
+
+.signature{
+    margin-top:30px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#777;
+}
+
+/* CORAÇÕES */
+
+.heart{
+    position:fixed;
+    bottom:-50px;
+
+    color:#ff6b9d;
+
+    animation:float 7s linear forwards;
+
+    pointer-events:none;
+}
+
+@keyframes float{
+
+    from{
+        transform:
+        translateY(0);
+        opacity:1;
+    }
+
+    to{
+        transform:
+        translateY(-110vh);
+        opacity:0;
+    }
+
+}
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:2.8rem;
+}
+
+.section-title{
+    font-size:2rem;
+}
+
+.photo-block{
+    flex-direction:column;
+}
+
+.photo-block img{
+    width:100%;
+}
+
+.sofa{
+    padding:30px;
+}
+
+.letter{
+    padding:30px;
+}
+
+}
